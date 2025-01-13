@@ -48,7 +48,7 @@ class TasksController < ApplicationController
   end
   
   private
-  def task_params  # プライベートメソッド 
+  def task_params  # プライベートメソッド /別で定義する
     params.require(:task).permit(:title, :start_date, :end_date, :is_all_day, :memo)
   end
 
